@@ -42,3 +42,8 @@ Create a simple front-end clone of Google Classroom that displays classes using 
 ## Stretch Goals
 
 - Add a feature to create new classes
+- Implement a simple routing system to view class details
+- Use local storage to persist data between page reloads
+
+Remember, the goal is to understand the concepts and create a working prototype. Focus on problem-solving and creating clean, readable code.
+
