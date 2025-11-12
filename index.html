@@ -1,62 +1,71 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Classroom Dashboard</title>
 
+  <link rel="stylesheet" href="styles.css" />
+</head>
 <body>
 
-  <div class= "container">
-<div class= "sidebar">
+  <div class="sidebar">
+    <div class="top">
+        <!-- Placeholder for profile image or icon -->
+        <!-- <img src="profile.jpg" class="profile-img" /> -->
+        <button class="home">Home</button>
+        <button class="calendar">Calendar</button>
+    </div>
 
+    <div class="classes">
+      <h3>Enrolled</h3>
+      <button class="toDo">To-do</button>
+      <button class="class1">ClassName</button>
+    </div>
 
-  <div class= "header1">
-    <!-- Three lines at top of gc sidebar(menu button), -->
-    <h3>Classroom</h3> <!-- Google Classrom click to go to homepage --> 
-    <img src="add_24dp_1F1F1F.svg">
-    
-        <img src=""> <!-- Google Classrom Icon -->
-
-       <img src=""> <!-- Plus icon -->
-       <img src=""> <!-- Square icon -->
-       <img src=""> <!-- Profile icon -->
-  </div>  
-
-  <div class= "top">
-
-    <img src="">
-      <button class= "home">Home</button> <br>
-    <img src="">
-      <br> <button class= "calendar">Calendar</button>
+    <div class="archiveClasses">
+      <button class="archived">Archived Classes</button>
+      <button class="settings">Settings</button>
+    </div>
   </div>
 
-<div class="classes">
-    <h3>Enrolled</h3>
-        <img src="">
-  <button class= "toDo">To-do</button> <br>
-        <img src="">
-    <br> <button class= "class1">ClassName</button> <br>
-        <img src="">
-    <br> <button class= "class1">ClassName</button> <br>
-</div>
+  <!-- Main Content -->
+  <div class="main">
+    <!-- Header with icons -->
+    <div class="header1">
+      <!-- Menu icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 0 24 24" width="24px" fill="#1f1f1f">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path d="M2 15.5v2h20v-2H2zm0-5v2h20v-2H2zm0-5v2h20v-2H2z"/>
+      </svg>
 
-<div class="archiveClasses">
-        <img src="">
-    <br> <button class= "archived">Archived Classes</button> <br>
+      <h3>Classroom</h3>
 
-        <img src="">
-    <br> <button class= "settings">Settings</button>
-</div>
+      <!-- Plus icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 0 24 24" width="34px" fill="#1f1f1f">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+      </svg>
 
+      <!-- Profile icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="34px" fill="#1f1f1f">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/>
+      </svg>
+    </div>
 
+    <!-- Container for class cards -->
+    <div id="cardsContainer"></div>
 
+    <!-- Input fields for adding new course -->
+    <div id="addCourse">
+      <input type="text" id="teacherInput" placeholder="Enter Teacher's Name" />
+      <input type="text" id="classNameInput" placeholder="Enter Class Name" />
+      <button id="saveCourseButton">Save</button>
+    </div>
   </div>
-</div>  
-  
+
+  <!-- Link to external JavaScript -->
+  <script src="script.js"></script>
 </body>
-
 </html>
